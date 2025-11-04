@@ -1,0 +1,241 @@
+/* =======================================================
+   PALETA DE COLORES
+   ======================================================= */
+:root {
+    --federal-blue: #03045e;
+    --marian-blue: #023e8a;
+    --honolulu-blue: #0077b6;
+    --blue-green: #0096c7;
+    --pacific-cyan: #00b4d8;
+    --vivid-sky-blue: #48cae4;
+    --non-photo-blue: #90e0ef;
+    --non-photo-blue-2: #ade8f4;
+    --light-cyan: #caf0f8;
+    --gris-texto: #333;
+}
+
+/* =======================================================
+   GENERAL
+   ======================================================= */
+body {
+    background-color: var(--light-cyan);
+    color: var(--gris-texto);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* =======================================================
+   HEADER
+   ======================================================= */
+header {
+    background: var(--marian-blue);
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 5px solid var(--pacific-cyan);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-style: italic;
+    color: var(--non-photo-blue-2);
+}
+
+/* =======================================================
+   NAVEGACIÓN
+   ======================================================= */
+nav {
+    background-color: var(--federal-blue);
+    padding: 10px 40px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li.ultimoLi {
+    margin-right: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a.activo {
+    color: var(--vivid-sky-blue);
+}
+
+nav a:hover {
+    background-color: var(--blue-green);
+    color: var(--light-cyan);
+}
+
+/* =======================================================
+   CONTENIDO GENERAL
+   ======================================================= */
+main {
+    padding: 20px 40px;
+    min-height: 60vh;
+    background-color: var(--non-photo-blue-2);
+}
+
+.caja-contenido,
+#bienvenida {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--marian-blue);
+    border-bottom: 2px solid var(--marian-blue);
+    padding-bottom: 5px;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+#proyectos-destacados {
+    margin-top: 30px;
+}
+
+.lista-habilidades {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.lista-habilidades li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+h3 {
+    color: var(--honolulu-blue);
+}
+
+div {
+    background-color: var(--non-photo-blue);
+    border: 1px dashed var(--pacific-cyan);
+    padding: 40px;
+    text-align: center;
+    color: var(--federal-blue);
+    border-radius: 8px;
+}
+
+/* =======================================================
+   PIE DE PÁGINA
+   ======================================================= */
+footer {
+    background-color: var(--federal-blue);
+    color: var(--non-photo-blue-2);
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 4px solid var(--vivid-sky-blue);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p.sobre {
+    line-height: 1.6;
+}
+
+.copy-peq {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+    color: var(--light-cyan);
+}
+/* =======================================================
+   FORMULARIO DE CONTACTO
+   ======================================================= */
+form {
+    background-color: white;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid var(--pacific-cyan);
+}
+
+form h2 {
+    color: var(--marian-blue);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: var(--federal-blue);
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--non-photo-blue);
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+    background-color: var(--light-cyan);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--pacific-cyan);
+    box-shadow: 0 0 5px var(--vivid-sky-blue);
+    outline: none;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    background-color: var(--marian-blue);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--blue-green);
+    transform: scale(1.03);
+}
